@@ -2,18 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Fira+Sans:ital,wght@1,300&family=Mohave:wght@300&display=swap');
 
 html, body {
-    height: 100%;
     margin: 0;
-    display: block;
     color: white;
+    height: 100%;
 }
 
 .wrapper {
-    display: flex;
     position: relative;
+    display: flex;
     background-image: url("test.jpg");
     height: 100%;
-    width: 100%;
     background-color: #CBCDE6;
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,10 +47,9 @@ p span {
     font-family: 'Mohave', sans-serif;
 }
 
-.main div {
+#main div {
     position: relative;
     width: 500px;
-    height: 180px;
     left: 300px;
     border-width: 5px;
     background-blend-mode: color;
@@ -62,22 +59,25 @@ p span {
 .intro1 {
     text-align: left;
     border-left-style: solid;
-    top:60px;
+    top: 50px;
     padding-left: 5px;
+    height: 180px;
 }
 
 .intro2 {
     text-align: right;
     border-right-style: solid;
-    top:120px;
+    top:95px;
     padding-right: 5px;
+    height: 270px;
 }
 
 .intro3 {
     text-align: left;
     border-left-style: solid;
-    top:180px;
+    top:150px;
     padding-left: 5px;
+    height: 230px;
 }
 
 .wrapper .sidenav ul {
@@ -104,4 +104,21 @@ p span {
     color: white;
     text-decoration: none;
     font-family: 'Cairo', sans-serif;
+}
+
+.wrapper .sidenav ul br~li {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: none;
+    border-bottom: none;
+    list-style: none;
+    font-size: 1.2em;    
+}
+
+br {
+    margin-top: 30px;
+    display: block;
+    line-height: 30px;
 }
