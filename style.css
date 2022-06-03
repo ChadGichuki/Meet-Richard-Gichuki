@@ -1,0 +1,20 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: block;
+    color: #CBCDE6;
+}
+
+.background {
+    background-image: url("test.jpg");
+    height: 100%;
+    width: 100%;
+    background-color: #CBCDE6;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.75;
+}
+
+
