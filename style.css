@@ -122,3 +122,50 @@ br {
     display: block;
     line-height: 30px;
 }
+
+.wrapper #blog_page {
+    background: #647C90;
+    background-image: none;
+    position: relative;
+    margin-left: 200px;
+}
+
+#blog_page div {
+    width:100vw;
+}
+
+.blog_wrapper {
+    display: flex;
+}
+
+.blog_wrapper div {
+    float: left;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+}
+
+.blog_wrapper div img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.blog_wrapper div button {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10%;
+    background: #a55606;
+}
+
+.blog_wrapper div button a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #FDFEFF;
+}
+
+.blog_wrapper div button:hover {
+    background: #e99542;
+}
