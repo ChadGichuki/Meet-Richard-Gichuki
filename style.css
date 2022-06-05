@@ -1,5 +1,8 @@
+/* These are font imports from fonts.google.com */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Fira+Sans:ital,wght@1,300&family=Mohave:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Fira+Sans:ital,wght@1,300&family=Kdam+Thmor+Pro&family=Mohave:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Domine&family=Fira+Sans:ital,wght@1,300&family=Kdam+Thmor+Pro&family=Titillium+Web:wght@300&display=swap');
 
 html, body {
     margin: 0;
@@ -7,6 +10,7 @@ html, body {
     height: 100%;
 }
 
+/* The wrapper divides the page into a side nav bar and the main content area */
 .wrapper {
     position: relative;
     display: flex;
@@ -19,6 +23,7 @@ html, body {
     opacity: 0.80;
 }
 
+/* Side nav remains fixed */
 .wrapper .sidenav{
     position: fixed;
     width: 200px;
@@ -56,6 +61,7 @@ p span {
     border-radius: 5px;
 }
 
+/* The intros 1 2 and 3 are the paragraphs on the home page */
 .intro1 {
     text-align: left;
     border-left-style: solid;
@@ -106,6 +112,8 @@ p span {
     font-family: 'Cairo', sans-serif;
 }
 
+/* This formats the last 4 navbar links to social media pages */
+
 .wrapper .sidenav ul br~li {
     padding-left: 15px;
     padding-right: 15px;
@@ -131,8 +139,10 @@ br {
 }
 
 #blog_page div {
-    width:100vw;
+    width:90vw;
 }
+
+/* this blog wrapper achieves the side by side layout of the blog page */
 
 .blog_wrapper {
     display: flex;
@@ -144,6 +154,12 @@ br {
     padding-left: 50px;
     padding-right: 50px;
     text-align: justify;
+    height: 100%;
+}
+
+.blog_wrapper div h2 {
+    color: black;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 .blog_wrapper div img {
@@ -152,6 +168,7 @@ br {
     text-align: center;
 }
 
+/* TODO: Set the 3 buttons to the same height */ 
 .blog_wrapper div button {
     width: 200px;
     height: 50px;
@@ -168,4 +185,76 @@ br {
 
 .blog_wrapper div button:hover {
     background: #e99542;
+    background-size: cover;
+}
+
+#bio {
+    display: block;
+    background: #c1c7cc;
+    width: 90vw;
+    height: 100vh;
+    margin-left: 200px;
+    position: relative;
+}
+
+.bio_section {
+    height: 100vh;
+}
+
+/* The three main brownish sections on the bio page */
+
+#bio .bio_section .sect {
+    width: 95%;
+    border: solid rgb(146, 214, 216);
+    border: 10px;
+    border-radius: 15%;
+    margin: 20px;
+    background: rgb(233,149,66);
+    background: linear-gradient(90deg, rgba(233,149,66,1) 0%, rgba(189,145,101,1) 50%, rgba(163,136,110,1) 82%);
+    padding: 10px;
+    
+}
+
+#bio .bio_section .sect p {
+    color: #09111a;
+    margin-left: 40px;
+}
+
+#bio .bio_section .sect ul {
+    margin-left: 30px;
+} 
+
+#bio .bio_section .sect ul li {
+    line-height: 1.3em;
+    padding: 3px;
+    font-size: 1.4em;
+    font-family: 'Cairo', sans-serif;
+    color: #09111a;
+}
+
+/* TODO: Format this part later */
+#bio .bio_section .sect ul li span {
+    text-decoration: none;
+}
+
+#bio .bio_section .sect h1 {
+    margin-left: 90px;
+    color: #09111a;
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: #09111a;
+}
+
+#bio .bio_section .sect h1:hover {
+    cursor: pointer;
+}
+
+/* The fun facts on the bio page should toggle between hidden and display on clicking of the h1 above them */
+.hidden {
+    display: none;
+}
+
+.display {
+    display: block;
+    margin-left: 20px;
 }
