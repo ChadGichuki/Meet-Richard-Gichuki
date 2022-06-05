@@ -1,9 +1,6 @@
 const intro1 = document.querySelector(".intro1");
 const intro2 = document.querySelector(".intro2");
 const intro3 = document.querySelector(".intro3");
-const edu = document.querySelector("#education");
-const exp = document.querySelector("#experience");
-const skill = document.querySelector("#skills");
 
 // Have a zoom in effect on the first paragraph on the home page
 intro1.addEventListener('mouseover', function(e) {
@@ -42,19 +39,4 @@ intro3.addEventListener('mouseleave', function(e) {
     intro3.style.background = "none";
     intro3.style.transition = "transform .8s";
     intro3.style.transform = "scale(1)";
-})
-
-
-// Display the hidden content (fun facts in h2 tag) on clicking the headings on bio page
-edu.addEventListener('click', function(e) {
-    document.querySelector("#education + h2.hidden").setAttribute(className = "display");
-    console.log(e);
-})
-
-exp.addEventListener('click', function(e) {
-    document.querySelector("#experience + .hidden").setAttribute(className = "display");
-})
-
-skills.addEventListener('click', function(e) {
-    document.querySelector("#skills + .hidden").setAttribute(className = "display");
 })
