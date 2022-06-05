@@ -2,6 +2,9 @@
 This is my First Personal Website, built with html, css and Javascript.
 I built it as my first project submission for the Fullstack Software Development Program at Moringa School. This notwithstanding, I gave it my best effort and I'm quite proud of it.
 
+## Preview
+https://chadgichuki.github.io/Meet-Richard-Gichuki/
+
 ## Objective
 The purpose of building this website was to test and showcase my growing frontend development skills.
 
